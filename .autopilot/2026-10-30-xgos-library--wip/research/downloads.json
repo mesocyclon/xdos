@@ -1,0 +1,210 @@
+[
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case11/input.docx",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case11/input.docx",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case11/input.docx",
+    "bytes": 41190
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case11/reference.pdf",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case11/reference.pdf",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case11/reference.pdf",
+    "bytes": 128735
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case14/input.docx",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case14/input.docx",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case14/input.docx",
+    "bytes": 36934
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case14/reference.pdf",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case14/reference.pdf",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case14/reference.pdf",
+    "bytes": 18088
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case15/input.docx",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case15/input.docx",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case15/input.docx",
+    "bytes": 37383
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case15/reference.pdf",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case15/reference.pdf",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case15/reference.pdf",
+    "bytes": 102058
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case18/input.docx",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case18/input.docx",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case18/input.docx",
+    "bytes": 16704
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case18/reference.pdf",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case18/reference.pdf",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case18/reference.pdf",
+    "bytes": 55896
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case19/input.docx",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case19/input.docx",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case19/input.docx",
+    "bytes": 36845
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case19/reference.pdf",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case19/reference.pdf",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case19/reference.pdf",
+    "bytes": 146192
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case20/input.docx",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case20/input.docx",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case20/input.docx",
+    "bytes": 37215
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case20/reference.pdf",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case20/reference.pdf",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case20/reference.pdf",
+    "bytes": 159327
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case25/input.docx",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case25/input.docx",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case25/input.docx",
+    "bytes": 37352
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case25/reference.pdf",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case25/reference.pdf",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case25/reference.pdf",
+    "bytes": 105239
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case26/input.docx",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case26/input.docx",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case26/input.docx",
+    "bytes": 37366
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case26/reference.pdf",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case26/reference.pdf",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case26/reference.pdf",
+    "bytes": 101733
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case28/input.docx",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case28/input.docx",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case28/input.docx",
+    "bytes": 40040
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case28/reference.pdf",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case28/reference.pdf",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case28/reference.pdf",
+    "bytes": 112985
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case29/input.docx",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case29/input.docx",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case29/input.docx",
+    "bytes": 40741
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "upstream_path": "tests/fixtures/cases/case29/reference.pdf",
+    "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case29/reference.pdf",
+    "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case29/reference.pdf",
+    "bytes": 85717
+  },
+  {
+    "repo": "python-openxml/python-docx",
+    "commit": "e45454602b53e8e572b179ccf1c91093ec9f4ed7",
+    "upstream_path": "LICENSE",
+    "raw_url": "https://raw.githubusercontent.com/python-openxml/python-docx/e45454602b53e8e572b179ccf1c91093ec9f4ed7/LICENSE",
+    "local_path": "corpus-seed/python-docx/LICENSE",
+    "bytes": 1104
+  },
+  {
+    "repo": "python-openxml/python-docx",
+    "commit": "e45454602b53e8e572b179ccf1c91093ec9f4ed7",
+    "upstream_path": "tests/test_files/blk-inner-content.docx",
+    "raw_url": "https://raw.githubusercontent.com/python-openxml/python-docx/e45454602b53e8e572b179ccf1c91093ec9f4ed7/tests/test_files/blk-inner-content.docx",
+    "local_path": "corpus-seed/python-docx/tests/test_files/blk-inner-content.docx",
+    "bytes": 11949
+  },
+  {
+    "repo": "python-openxml/python-docx",
+    "commit": "e45454602b53e8e572b179ccf1c91093ec9f4ed7",
+    "upstream_path": "tests/test_files/sct-inner-content.docx",
+    "raw_url": "https://raw.githubusercontent.com/python-openxml/python-docx/e45454602b53e8e572b179ccf1c91093ec9f4ed7/tests/test_files/sct-inner-content.docx",
+    "local_path": "corpus-seed/python-docx/tests/test_files/sct-inner-content.docx",
+    "bytes": 12051
+  },
+  {
+    "repo": "python-openxml/python-docx",
+    "commit": "e45454602b53e8e572b179ccf1c91093ec9f4ed7",
+    "upstream_path": "features/steps/test_files/hdr-header-footer.docx",
+    "raw_url": "https://raw.githubusercontent.com/python-openxml/python-docx/e45454602b53e8e572b179ccf1c91093ec9f4ed7/features/steps/test_files/hdr-header-footer.docx",
+    "local_path": "corpus-seed/python-docx/features/steps/test_files/hdr-header-footer.docx",
+    "bytes": 18079
+  },
+  {
+    "repo": "python-openxml/python-docx",
+    "commit": "e45454602b53e8e572b179ccf1c91093ec9f4ed7",
+    "upstream_path": "features/steps/test_files/num-having-numbering-part.docx",
+    "raw_url": "https://raw.githubusercontent.com/python-openxml/python-docx/e45454602b53e8e572b179ccf1c91093ec9f4ed7/features/steps/test_files/num-having-numbering-part.docx",
+    "local_path": "corpus-seed/python-docx/features/steps/test_files/num-having-numbering-part.docx",
+    "bytes": 24334
+  },
+  {
+    "repo": "python-openxml/python-docx",
+    "commit": "e45454602b53e8e572b179ccf1c91093ec9f4ed7",
+    "upstream_path": "features/steps/test_files/tbl-cell-props.docx",
+    "raw_url": "https://raw.githubusercontent.com/python-openxml/python-docx/e45454602b53e8e572b179ccf1c91093ec9f4ed7/features/steps/test_files/tbl-cell-props.docx",
+    "local_path": "corpus-seed/python-docx/features/steps/test_files/tbl-cell-props.docx",
+    "bytes": 13773
+  }
+]

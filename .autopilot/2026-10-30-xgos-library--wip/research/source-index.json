@@ -1,0 +1,86 @@
+[
+  {
+    "repo": "microsoft/OfficeComprehensionBench",
+    "commit": "ce90d36916025d5a4a9c3794e422d10a30c0ae80",
+    "tree_truncated": false,
+    "docx_count": 0,
+    "pdf_count": 0,
+    "candidate_paths": []
+  },
+  {
+    "repo": "sverrejb/docxide-pdf",
+    "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+    "tree_truncated": false,
+    "docx_count": 1062,
+    "pdf_count": 1064,
+    "candidate_paths": [
+      "tests/fixtures/cases/autofit-indent-first-line/input.docx",
+      "tests/fixtures/cases/autofit-indent-no-indent/input.docx",
+      "tests/fixtures/cases/autofit-indent-positive-left/input.docx",
+      "tests/fixtures/cases/autofit-indent-right-indent/input.docx",
+      "tests/fixtures/cases/autofit-run-boundaries-r1200-i0-s0-f0/input.docx",
+      "tests/fixtures/cases/autofit-run-boundaries-r1200-i0-s0-f1/input.docx",
+      "tests/fixtures/cases/autofit-run-boundaries-r1200-i0-s1-f0/input.docx",
+      "tests/fixtures/cases/autofit-run-boundaries-r1200-i0-s1-f1/input.docx"
+    ]
+  },
+  {
+    "repo": "plutext/docx4j",
+    "commit": "4cc16a7c70f4ee7499260ae8bdeed0f7ac7e133b",
+    "tree_truncated": false,
+    "docx_count": 623,
+    "pdf_count": 169,
+    "candidate_paths": [
+      "docs/Bookmark_crossrefs.docx",
+      "docs/Creating SmartArt with docx4j.docx",
+      "docs/Docx4j_GettingStarted.docx",
+      "docs/OpenDoPE Specification v3 WD 2026 09 18.docx",
+      "docs/developer/Convert_Out.docx",
+      "docs/developer/Eastern Arabic numbering.docx",
+      "docs/developer/Locale-Styles.docx",
+      "docs/developer/OpenDoPE boolean semantics.docx"
+    ]
+  },
+  {
+    "repo": "xberg-io/test_documents",
+    "commit": "fe07f80b1f185053b4e454781048e11783532ad1",
+    "tree_truncated": false,
+    "docx_count": 0,
+    "pdf_count": 0,
+    "candidate_paths": []
+  },
+  {
+    "repo": "python-openxml/python-docx",
+    "commit": "e45454602b53e8e572b179ccf1c91093ec9f4ed7",
+    "tree_truncated": false,
+    "docx_count": 46,
+    "pdf_count": 4,
+    "candidate_paths": [
+      "features/steps/test_files/blk-containing-table.docx",
+      "features/steps/test_files/blk-paras-and-tables.docx",
+      "features/steps/test_files/comments-rich-para.docx",
+      "features/steps/test_files/doc-access-sections.docx",
+      "features/steps/test_files/doc-add-section.docx",
+      "features/steps/test_files/doc-coreprops.docx",
+      "features/steps/test_files/doc-default.docx",
+      "features/steps/test_files/doc-no-coreprops.docx"
+    ]
+  },
+  {
+    "repo": "apache/poi",
+    "commit": "17de566ac64dee14bc1c132b9b4972b9a21165b3",
+    "tree_truncated": false,
+    "docx_count": 182,
+    "pdf_count": 1,
+    "candidate_paths": [
+      "poi-examples/src/main/java/org/apache/poi/examples/xwpf/usermodel/bar-chart-template.docx",
+      "test-data/document/51921-Word-Crash067.docx",
+      "test-data/document/52288.docx",
+      "test-data/document/52449.docx",
+      "test-data/document/55733.docx",
+      "test-data/document/55966.docx",
+      "test-data/document/56392.docx",
+      "test-data/document/57312.docx"
+    ]
+  }
+]

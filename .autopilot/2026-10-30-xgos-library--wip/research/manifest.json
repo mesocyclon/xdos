@@ -1,0 +1,1284 @@
+{
+  "as_of": "2026-10-30",
+  "status": "research-seed-not-acceptance",
+  "limits": {
+    "max_download_file_bytes": 2000000,
+    "max_docx_entries": 256,
+    "max_part_expanded_bytes": 5000000,
+    "max_docx_expanded_bytes": 20000000,
+    "total_download_limit_bytes": 15000000
+  },
+  "entries": [
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case11/input.docx",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case11/input.docx",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case11/input.docx",
+      "bytes": 41190,
+      "sha256": "060fa068555394875719fdab3f6079881ffb916dd8559100337fb7f23ba1ecda",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 0,
+        "lists": 0,
+        "headers": 2,
+        "footers": 2,
+        "notes": 0,
+        "images": 0,
+        "sections": 1,
+        "fields": 4,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Arial",
+        "Calibri",
+        "Cambria",
+        "Courier",
+        "Symbol",
+        "Times New Roman",
+        "ＭＳ ゴシック",
+        "ＭＳ 明朝"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/bibliography",
+        "http://schemas.openxmlformats.org/officeDocument/2006/customXml",
+        "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "urn:schemas-microsoft-com:office:office"
+      ],
+      "external_relationships": [],
+      "parts": 21,
+      "expanded_bytes": 839252,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "Pair exists",
+      "text_sample": "Executive SummaryThis quarterly report provides a comprehensive overview of our organizational performance during Q3 2025. The following sections detail key achievements, financial",
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case11/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case11/reference.pdf",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case11/reference.pdf",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case11/reference.pdf",
+      "bytes": 128735,
+      "sha256": "135a57747957c0c020c6add5a842a1bfa02d8b8dd5ea5918f8083558d7e9b3da",
+      "pdf_raw_metadata": [
+        "/Creator(Microsoft Word)",
+        "/CreationDate(D:20260222160812+00'00')",
+        "/ModDate(D:20260222160812+00'00')"
+      ],
+      "expectedrole": "candidate-unqualified",
+      "word_oracle": "Word provenance supported by upstream README/export script and raw PDF metadata; not independently rendered or validated",
+      "exact_geometry_qualified": false,
+      "flags": [
+        "Font binaries/versions unavailable; upstream private font assets",
+        "pdfinfo/pdftotext/pdffonts unavailable on host",
+        "No independent PDF parse, raster or visual comparison performed"
+      ],
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case11/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case14/input.docx",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case14/input.docx",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case14/input.docx",
+      "bytes": 36934,
+      "sha256": "123981515a56ea9b2176e89dbde203ddebcda05be27ce52968ee061202c79f10",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 0,
+        "lists": 0,
+        "headers": 0,
+        "footers": 0,
+        "notes": 0,
+        "images": 0,
+        "sections": 1,
+        "fields": 0,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Aptos",
+        "Arial",
+        "Calibri",
+        "Cambria",
+        "Courier",
+        "Symbol",
+        "Times New Roman",
+        "ＭＳ ゴシック",
+        "ＭＳ 明朝"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/bibliography",
+        "http://schemas.openxmlformats.org/officeDocument/2006/customXml",
+        "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "urn:schemas-microsoft-com:office:office"
+      ],
+      "external_relationships": [
+        {
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink",
+          "target": "https://example.com"
+        },
+        {
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink",
+          "target": "https://example.org"
+        },
+        {
+          "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink",
+          "target": "https://www.rust-lang.org"
+        }
+      ],
+      "parts": 17,
+      "expanded_bytes": 827808,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "Pair exists",
+      "text_sample": "This paragraph has a simple hyperlink in the middle of it.Visit Example or Example Org for more information.https://www.rust-lang.orgThis is a normal paragraph with no hyperlinks, ",
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case14/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case14/reference.pdf",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case14/reference.pdf",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case14/reference.pdf",
+      "bytes": 18088,
+      "sha256": "1c73bf43793d8688ab12db52647b5b48bc21cf3bc0ae58ff2bdd1d54ac57903a",
+      "pdf_raw_metadata": [
+        "/Creator(Microsoft Word)",
+        "/CreationDate(D:20260222223738+00'00')",
+        "/ModDate(D:20260222223738+00'00')"
+      ],
+      "expectedrole": "candidate-unqualified",
+      "word_oracle": "Word provenance supported by upstream README/export script and raw PDF metadata; not independently rendered or validated",
+      "exact_geometry_qualified": false,
+      "flags": [
+        "Font binaries/versions unavailable; upstream private font assets",
+        "pdfinfo/pdftotext/pdffonts unavailable on host",
+        "No independent PDF parse, raster or visual comparison performed"
+      ],
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case14/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case15/input.docx",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case15/input.docx",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case15/input.docx",
+      "bytes": 37383,
+      "sha256": "b5b9db400d391d466e54164c0a044cd46ab040fd4459cce66accc6c5632dbad1",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 5,
+        "lists": 0,
+        "headers": 0,
+        "footers": 0,
+        "notes": 0,
+        "images": 0,
+        "sections": 1,
+        "fields": 0,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Arial",
+        "Calibri",
+        "Cambria",
+        "Courier",
+        "Symbol",
+        "Times New Roman",
+        "ＭＳ ゴシック",
+        "ＭＳ 明朝"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/bibliography",
+        "http://schemas.openxmlformats.org/officeDocument/2006/customXml",
+        "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "urn:schemas-microsoft-com:office:office"
+      ],
+      "external_relationships": [],
+      "parts": 17,
+      "expanded_bytes": 834948,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "Pair exists",
+      "text_sample": "Horizontal Merged CellsNameContactFirstLastEmailPhoneAliceSmithalice@example.com+1 555-0100Vertical Merged CellsRegionProductRevenueNorthWidgets$120,000Gadgets$85,000SouthWidgets$9",
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case15/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case15/reference.pdf",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case15/reference.pdf",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case15/reference.pdf",
+      "bytes": 102058,
+      "sha256": "cf483f616c2e17713274d2202373dc420e3cc8c78dcb485f399a498d66ac09da",
+      "pdf_raw_metadata": [
+        "/Creator(Microsoft Word)",
+        "/CreationDate(D:20260224082305+00'00')",
+        "/ModDate(D:20260224082305+00'00')"
+      ],
+      "expectedrole": "candidate-unqualified",
+      "word_oracle": "Word provenance supported by upstream README/export script and raw PDF metadata; not independently rendered or validated",
+      "exact_geometry_qualified": false,
+      "flags": [
+        "Font binaries/versions unavailable; upstream private font assets",
+        "pdfinfo/pdftotext/pdffonts unavailable on host",
+        "No independent PDF parse, raster or visual comparison performed"
+      ],
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case15/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case18/input.docx",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case18/input.docx",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case18/input.docx",
+      "bytes": 16704,
+      "sha256": "3097f261f9bed9b2302520a8e870d0b403a3f7b10009959ab2dd34d3017a1353",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 0,
+        "lists": 0,
+        "headers": 0,
+        "footers": 0,
+        "notes": 6,
+        "images": 0,
+        "sections": 1,
+        "fields": 0,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Aptos",
+        "Aptos Display",
+        "Times New Roman"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/thememl/2012/main",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.microsoft.com/office/word/2012/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+      ],
+      "external_relationships": [],
+      "parts": 13,
+      "expanded_bytes": 78962,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "Pair exists",
+      "text_sample": "Footnotes in DocumentsFootnotes are a standard feature of academic and professional writing. They provide additional context without interrupting the main text flow.The history of ",
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case18/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case18/reference.pdf",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case18/reference.pdf",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case18/reference.pdf",
+      "bytes": 55896,
+      "sha256": "d8c43c4669ca26fd911ea6735acc808e5319a60f1143237b89d0b074618134ce",
+      "pdf_raw_metadata": [
+        "/Creator(Microsoft Word)",
+        "/CreationDate(D:20261003185931+00'00')",
+        "/ModDate(D:20261003185931+00'00')"
+      ],
+      "expectedrole": "candidate-unqualified",
+      "word_oracle": "Word provenance supported by upstream README/export script and raw PDF metadata; not independently rendered or validated",
+      "exact_geometry_qualified": false,
+      "flags": [
+        "Font binaries/versions unavailable; upstream private font assets",
+        "pdfinfo/pdftotext/pdffonts unavailable on host",
+        "No independent PDF parse, raster or visual comparison performed"
+      ],
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case18/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case19/input.docx",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case19/input.docx",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case19/input.docx",
+      "bytes": 36845,
+      "sha256": "807cdfa557d41b0da87c5df9bc5d94479249330bf4c9a2c994cf865412a2ad38",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 0,
+        "lists": 12,
+        "headers": 0,
+        "footers": 0,
+        "notes": 0,
+        "images": 0,
+        "sections": 1,
+        "fields": 0,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Arial",
+        "Calibri",
+        "Cambria",
+        "Courier",
+        "Symbol",
+        "Times New Roman",
+        "ＭＳ ゴシック",
+        "ＭＳ 明朝"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/bibliography",
+        "http://schemas.openxmlformats.org/officeDocument/2006/customXml",
+        "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "urn:schemas-microsoft-com:office:office"
+      ],
+      "external_relationships": [],
+      "parts": 17,
+      "expanded_bytes": 828775,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "Pair exists",
+      "text_sample": "Nested Numbered ListFirst itemSub-item aSub-item bDetail iDetail iiSub-item cSecond itemSub-item a againThird itemCustom StartStarts at fiveThen sixThen seven",
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case19/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case19/reference.pdf",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case19/reference.pdf",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case19/reference.pdf",
+      "bytes": 146192,
+      "sha256": "0923ae8905d868834b3e7267113087f6cba45d4358efe85c690984b8cb15501b",
+      "pdf_raw_metadata": [
+        "/Creator(Microsoft Word)",
+        "/CreationDate(D:20261003185956+00'00')",
+        "/ModDate(D:20261003185956+00'00')"
+      ],
+      "expectedrole": "candidate-unqualified",
+      "word_oracle": "Word provenance supported by upstream README/export script and raw PDF metadata; not independently rendered or validated",
+      "exact_geometry_qualified": false,
+      "flags": [
+        "Font binaries/versions unavailable; upstream private font assets",
+        "pdfinfo/pdftotext/pdffonts unavailable on host",
+        "No independent PDF parse, raster or visual comparison performed"
+      ],
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case19/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case20/input.docx",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case20/input.docx",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case20/input.docx",
+      "bytes": 37215,
+      "sha256": "517e1315d032507e21675512f2964f2fe35ae4d196b84d0e205300d85bf47bc0",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 0,
+        "lists": 32,
+        "headers": 0,
+        "footers": 0,
+        "notes": 0,
+        "images": 0,
+        "sections": 1,
+        "fields": 0,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Arial",
+        "Calibri",
+        "Cambria",
+        "Courier",
+        "Symbol",
+        "Times New Roman",
+        "ＭＳ ゴシック",
+        "ＭＳ 明朝"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/bibliography",
+        "http://schemas.openxmlformats.org/officeDocument/2006/customXml",
+        "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "urn:schemas-microsoft-com:office:office"
+      ],
+      "external_relationships": [],
+      "parts": 17,
+      "expanded_bytes": 832988,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "Pair exists",
+      "text_sample": "Outline FormatIntroductionBackgroundHistorical contextEarly developmentsLater developmentsCurrent stateMotivationMethodsData collectionPrimary sourcesSecondary sourcesAnalysisResul",
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case20/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case20/reference.pdf",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case20/reference.pdf",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case20/reference.pdf",
+      "bytes": 159327,
+      "sha256": "5c6e01d4771c8d8f58cedff3b3dc813b8eefda0fbedd8d051a1ca5df74e8f6f7",
+      "pdf_raw_metadata": [
+        "/Creator(Microsoft Word)",
+        "/CreationDate(D:20261003190021+00'00')",
+        "/ModDate(D:20261003190021+00'00')"
+      ],
+      "expectedrole": "candidate-unqualified",
+      "word_oracle": "Word provenance supported by upstream README/export script and raw PDF metadata; not independently rendered or validated",
+      "exact_geometry_qualified": false,
+      "flags": [
+        "Font binaries/versions unavailable; upstream private font assets",
+        "pdfinfo/pdftotext/pdffonts unavailable on host",
+        "No independent PDF parse, raster or visual comparison performed"
+      ],
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case20/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case25/input.docx",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case25/input.docx",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case25/input.docx",
+      "bytes": 37352,
+      "sha256": "70a729d7a3ae4a437262c1f8c110e69bc4510a7846e2891ee9afc38c5b509cd1",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 0,
+        "lists": 0,
+        "headers": 0,
+        "footers": 0,
+        "notes": 0,
+        "images": 0,
+        "sections": 4,
+        "fields": 0,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Arial",
+        "Calibri",
+        "Cambria",
+        "Courier",
+        "Symbol",
+        "Times New Roman",
+        "ＭＳ ゴシック",
+        "ＭＳ 明朝"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/bibliography",
+        "http://schemas.openxmlformats.org/officeDocument/2006/customXml",
+        "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "urn:schemas-microsoft-com:office:office"
+      ],
+      "external_relationships": [],
+      "parts": 17,
+      "expanded_bytes": 829070,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "Pair exists",
+      "text_sample": "Landscape US Letter (11 x 8.5 inches)This page uses US Letter paper in landscape orientation. The text area is 9 inches wide by 6.5 inches tall. This tests that page dimensions are",
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case25/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case25/reference.pdf",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case25/reference.pdf",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case25/reference.pdf",
+      "bytes": 105239,
+      "sha256": "c0fe50e9ed4bee18567aefb29c63b1f1de9d0d8f0a406332aa53d557380d946a",
+      "pdf_raw_metadata": [
+        "/Creator(Microsoft Word)",
+        "/CreationDate(D:20260301085305+00'00')",
+        "/ModDate(D:20260301085305+00'00')"
+      ],
+      "expectedrole": "candidate-unqualified",
+      "word_oracle": "Word provenance supported by upstream README/export script and raw PDF metadata; not independently rendered or validated",
+      "exact_geometry_qualified": false,
+      "flags": [
+        "Font binaries/versions unavailable; upstream private font assets",
+        "pdfinfo/pdftotext/pdffonts unavailable on host",
+        "No independent PDF parse, raster or visual comparison performed"
+      ],
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case25/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case26/input.docx",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case26/input.docx",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case26/input.docx",
+      "bytes": 37366,
+      "sha256": "24b861355656c25379557e6e3983d5216283e6af0cfd00c91d26cd60bc24610c",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 0,
+        "lists": 0,
+        "headers": 0,
+        "footers": 0,
+        "notes": 0,
+        "images": 0,
+        "sections": 4,
+        "fields": 0,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Arial",
+        "Calibri",
+        "Cambria",
+        "Courier",
+        "Symbol",
+        "Times New Roman",
+        "ＭＳ ゴシック",
+        "ＭＳ 明朝"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/bibliography",
+        "http://schemas.openxmlformats.org/officeDocument/2006/customXml",
+        "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "urn:schemas-microsoft-com:office:office"
+      ],
+      "external_relationships": [],
+      "parts": 17,
+      "expanded_bytes": 829123,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "Pair exists",
+      "text_sample": "Section 1: Letter Portrait, Narrow MarginsThis is a standard US Letter page (8.5 x 11 inches) with narrow margins (0.75 inch left/right, 0.5 inch top/bottom). The text area is 7 in",
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case26/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case26/reference.pdf",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case26/reference.pdf",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case26/reference.pdf",
+      "bytes": 101733,
+      "sha256": "521dca65a693656ac97f41f649fb52867f139c1cd3ce03e916d47d7083fef2e5",
+      "pdf_raw_metadata": [
+        "/Creator(Microsoft Word)",
+        "/CreationDate(D:20260301085356+00'00')",
+        "/ModDate(D:20260301085356+00'00')"
+      ],
+      "expectedrole": "candidate-unqualified",
+      "word_oracle": "Word provenance supported by upstream README/export script and raw PDF metadata; not independently rendered or validated",
+      "exact_geometry_qualified": false,
+      "flags": [
+        "Font binaries/versions unavailable; upstream private font assets",
+        "pdfinfo/pdftotext/pdffonts unavailable on host",
+        "No independent PDF parse, raster or visual comparison performed"
+      ],
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case26/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case28/input.docx",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case28/input.docx",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case28/input.docx",
+      "bytes": 40040,
+      "sha256": "54180f2765c225f2ed73de9b12248c0dbb11a6ab891957c58cf0c0772dd2d983",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 0,
+        "lists": 0,
+        "headers": 1,
+        "footers": 3,
+        "notes": 0,
+        "images": 0,
+        "sections": 3,
+        "fields": 10,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Arial",
+        "Calibri",
+        "Cambria",
+        "Courier",
+        "Symbol",
+        "Times New Roman",
+        "ＭＳ ゴシック",
+        "ＭＳ 明朝"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/bibliography",
+        "http://schemas.openxmlformats.org/officeDocument/2006/customXml",
+        "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "urn:schemas-microsoft-com:office:office"
+      ],
+      "external_relationships": [],
+      "parts": 21,
+      "expanded_bytes": 837179,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "Pair exists",
+      "text_sample": "Section One: Centered Page NumbersThis section demonstrates centered page numbers in the footer using the classic dash-surrounded format. The page number appears centered at the bo",
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case28/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case28/reference.pdf",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case28/reference.pdf",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case28/reference.pdf",
+      "bytes": 112985,
+      "sha256": "f9155a1ec98216684ac8f3c96e60e9cb0c19c6ead6c3d9761300d8b38a098f2e",
+      "pdf_raw_metadata": [
+        "/Creator(Microsoft Word)",
+        "/CreationDate(D:20260303134533+00'00')",
+        "/ModDate(D:20260303134533+00'00')"
+      ],
+      "expectedrole": "candidate-unqualified",
+      "word_oracle": "Word provenance supported by upstream README/export script and raw PDF metadata; not independently rendered or validated",
+      "exact_geometry_qualified": false,
+      "flags": [
+        "Font binaries/versions unavailable; upstream private font assets",
+        "pdfinfo/pdftotext/pdffonts unavailable on host",
+        "No independent PDF parse, raster or visual comparison performed"
+      ],
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case28/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case29/input.docx",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case29/input.docx",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case29/input.docx",
+      "bytes": 40741,
+      "sha256": "2e7f2c2ee8df09521c9606c822e216264a8bcb2e8de0c87cd25ae23e17fcfd94",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 0,
+        "lists": 0,
+        "headers": 0,
+        "footers": 0,
+        "notes": 0,
+        "images": 0,
+        "sections": 1,
+        "fields": 0,
+        "charts": 4,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Arial",
+        "Calibri",
+        "Cambria",
+        "Courier",
+        "Symbol",
+        "Times New Roman",
+        "ＭＳ ゴシック",
+        "ＭＳ 明朝"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/chart",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+        "http://schemas.openxmlformats.org/officeDocument/2006/bibliography",
+        "http://schemas.openxmlformats.org/officeDocument/2006/customXml",
+        "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "urn:schemas-microsoft-com:office:office"
+      ],
+      "external_relationships": [],
+      "parts": 21,
+      "expanded_bytes": 844482,
+      "expectedrole": "refusal",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "Pair exists",
+      "text_sample": "Chart Test CasesChart 1: Vertical clustered bar chart (3 series, 4 categories)Chart 2: Horizontal bar chart (2 series, 5 categories)Chart 3: Single series vertical bar, no legendCh",
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case29/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "sverrejb/docxide-pdf",
+      "commit": "c2fa4fa461d987653dc717d7327096e57afb4686",
+      "upstream_path": "tests/fixtures/cases/case29/reference.pdf",
+      "raw_url": "https://raw.githubusercontent.com/sverrejb/docxide-pdf/c2fa4fa461d987653dc717d7327096e57afb4686/tests/fixtures/cases/case29/reference.pdf",
+      "local_path": "corpus-seed/docxide-pdf/tests/fixtures/cases/case29/reference.pdf",
+      "bytes": 85717,
+      "sha256": "2ec1568aba454277370bfec3663ded33b693403da0f1b7b4079872b0ec363782",
+      "pdf_raw_metadata": [
+        "/Creator(Microsoft Word)",
+        "/CreationDate(D:20260304092832+00'00')",
+        "/ModDate(D:20260304092832+00'00')"
+      ],
+      "expectedrole": "candidate-unqualified",
+      "word_oracle": "Word provenance supported by upstream README/export script and raw PDF metadata; not independently rendered or validated",
+      "exact_geometry_qualified": false,
+      "flags": [
+        "Font binaries/versions unavailable; upstream private font assets",
+        "pdfinfo/pdftotext/pdffonts unavailable on host",
+        "No independent PDF parse, raster or visual comparison performed"
+      ],
+      "origin": "Synthetic project fixture with committed generator",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docxide-pdf/LICENSE",
+        "sources/docxide-pdf/tests/fixtures/cases/case29/generate.py"
+      ],
+      "redistribution": "Project-generated synthetic material under repository license; preserve notice; embedded fonts require separate rights qualification"
+    },
+    {
+      "repo": "python-openxml/python-docx",
+      "commit": "e45454602b53e8e572b179ccf1c91093ec9f4ed7",
+      "upstream_path": "tests/test_files/blk-inner-content.docx",
+      "raw_url": "https://raw.githubusercontent.com/python-openxml/python-docx/e45454602b53e8e572b179ccf1c91093ec9f4ed7/tests/test_files/blk-inner-content.docx",
+      "local_path": "corpus-seed/python-docx/tests/test_files/blk-inner-content.docx",
+      "bytes": 11949,
+      "sha256": "16243dd05f686d6d5fab331843691492ad78ae3eb4f13cc8686077b44718c0ba",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 1,
+        "lists": 0,
+        "headers": 0,
+        "footers": 0,
+        "notes": 0,
+        "images": 0,
+        "sections": 1,
+        "fields": 0,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Calibri",
+        "Calibri Light",
+        "Times New Roman"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/thememl/2012/main",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.microsoft.com/office/word/2012/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+      ],
+      "external_relationships": [],
+      "parts": 11,
+      "expanded_bytes": 50492,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "No paired PDF; not a Word rendering oracle",
+      "text_sample": "P1T2P3",
+      "origin": "Purpose-built python-docx test fixture",
+      "license": "MIT",
+      "licenseevidence": [
+        "corpus-seed/python-docx/LICENSE"
+      ],
+      "redistribution": "Repository license plus narrow synthetic test content; no claim about arbitrary third-party fixtures"
+    },
+    {
+      "repo": "python-openxml/python-docx",
+      "commit": "e45454602b53e8e572b179ccf1c91093ec9f4ed7",
+      "upstream_path": "tests/test_files/sct-inner-content.docx",
+      "raw_url": "https://raw.githubusercontent.com/python-openxml/python-docx/e45454602b53e8e572b179ccf1c91093ec9f4ed7/tests/test_files/sct-inner-content.docx",
+      "local_path": "corpus-seed/python-docx/tests/test_files/sct-inner-content.docx",
+      "bytes": 12051,
+      "sha256": "d92e9ca7b09fab7b475c57dfba08f6acba2742aff2691cc7284649c640059c73",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 2,
+        "lists": 0,
+        "headers": 0,
+        "footers": 0,
+        "notes": 0,
+        "images": 0,
+        "sections": 3,
+        "fields": 0,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Calibri",
+        "Calibri Light",
+        "Times New Roman"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/thememl/2012/main",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.microsoft.com/office/word/2012/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+      ],
+      "external_relationships": [],
+      "parts": 11,
+      "expanded_bytes": 51883,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "No paired PDF; not a Word rendering oracle",
+      "text_sample": "P1T2P3T4P5P6P7P8P9",
+      "origin": "Purpose-built python-docx test fixture",
+      "license": "MIT",
+      "licenseevidence": [
+        "corpus-seed/python-docx/LICENSE"
+      ],
+      "redistribution": "Repository license plus narrow synthetic test content; no claim about arbitrary third-party fixtures"
+    },
+    {
+      "repo": "python-openxml/python-docx",
+      "commit": "e45454602b53e8e572b179ccf1c91093ec9f4ed7",
+      "upstream_path": "features/steps/test_files/hdr-header-footer.docx",
+      "raw_url": "https://raw.githubusercontent.com/python-openxml/python-docx/e45454602b53e8e572b179ccf1c91093ec9f4ed7/features/steps/test_files/hdr-header-footer.docx",
+      "local_path": "corpus-seed/python-docx/features/steps/test_files/hdr-header-footer.docx",
+      "bytes": 18079,
+      "sha256": "5a4cb270680d1365688073e4816be98c2ab1a7ba2921d86cb3efadca97a72d27",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 0,
+        "lists": 0,
+        "headers": 3,
+        "footers": 3,
+        "notes": 0,
+        "images": 0,
+        "sections": 2,
+        "fields": 0,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Calibri",
+        "Cambria",
+        "Courier",
+        "MS Gothic",
+        "MS Mincho",
+        "Times New Roman"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.microsoft.com/office/word/2012/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "urn:schemas-microsoft-com:office:office"
+      ],
+      "external_relationships": [],
+      "parts": 19,
+      "expanded_bytes": 73281,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "No paired PDF; not a Word rendering oracle",
+      "text_sample": "section with headersection without header of its own.Footer for section 1Header for section-1",
+      "origin": "Purpose-built python-docx test fixture",
+      "license": "MIT",
+      "licenseevidence": [
+        "corpus-seed/python-docx/LICENSE"
+      ],
+      "redistribution": "Repository license plus narrow synthetic test content; no claim about arbitrary third-party fixtures"
+    },
+    {
+      "repo": "python-openxml/python-docx",
+      "commit": "e45454602b53e8e572b179ccf1c91093ec9f4ed7",
+      "upstream_path": "features/steps/test_files/num-having-numbering-part.docx",
+      "raw_url": "https://raw.githubusercontent.com/python-openxml/python-docx/e45454602b53e8e572b179ccf1c91093ec9f4ed7/features/steps/test_files/num-having-numbering-part.docx",
+      "local_path": "corpus-seed/python-docx/features/steps/test_files/num-having-numbering-part.docx",
+      "bytes": 24334,
+      "sha256": "66b45ace7afa65acab6036bdc63d9416554576df633c13a6774bf41d4a60a47e",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 0,
+        "lists": 0,
+        "headers": 0,
+        "footers": 0,
+        "notes": 0,
+        "images": 0,
+        "sections": 1,
+        "fields": 0,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Arial",
+        "Calibri",
+        "Cambria",
+        "Symbol",
+        "Times New Roman",
+        "ＭＳ ゴシック",
+        "ＭＳ 明朝"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
+      ],
+      "external_relationships": [],
+      "parts": 14,
+      "expanded_bytes": 66405,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "No paired PDF; not a Word rendering oracle",
+      "text_sample": "Paragraph having List Number style.",
+      "origin": "Purpose-built python-docx test fixture",
+      "license": "MIT",
+      "licenseevidence": [
+        "corpus-seed/python-docx/LICENSE"
+      ],
+      "redistribution": "Repository license plus narrow synthetic test content; no claim about arbitrary third-party fixtures"
+    },
+    {
+      "repo": "python-openxml/python-docx",
+      "commit": "e45454602b53e8e572b179ccf1c91093ec9f4ed7",
+      "upstream_path": "features/steps/test_files/tbl-cell-props.docx",
+      "raw_url": "https://raw.githubusercontent.com/python-openxml/python-docx/e45454602b53e8e572b179ccf1c91093ec9f4ed7/features/steps/test_files/tbl-cell-props.docx",
+      "local_path": "corpus-seed/python-docx/features/steps/test_files/tbl-cell-props.docx",
+      "bytes": 13773,
+      "sha256": "612ab03dfde001588d0081706238c08d2938b55807de5342677cfcc0bcd53e6d",
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 1,
+        "lists": 0,
+        "headers": 0,
+        "footers": 0,
+        "notes": 0,
+        "images": 0,
+        "sections": 1,
+        "fields": 0,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Arial",
+        "Calibri",
+        "Cambria",
+        "Times New Roman",
+        "ＭＳ ゴシック",
+        "ＭＳ 明朝"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "urn:schemas-microsoft-com:office:office"
+      ],
+      "external_relationships": [],
+      "parts": 13,
+      "expanded_bytes": 70314,
+      "expectedrole": "roundtrip",
+      "flags": [
+        "Structural inventory only; not OOXML validation or positive PDF acceptance",
+        "Fonts listed from declarations, not resolved visible font usage"
+      ],
+      "word_oracle": "No paired PDF; not a Word rendering oracle",
+      "text_sample": "abcdefghijklmn",
+      "origin": "Purpose-built python-docx test fixture",
+      "license": "MIT",
+      "licenseevidence": [
+        "corpus-seed/python-docx/LICENSE"
+      ],
+      "redistribution": "Repository license plus narrow synthetic test content; no claim about arbitrary third-party fixtures"
+    }
+  ]
+}

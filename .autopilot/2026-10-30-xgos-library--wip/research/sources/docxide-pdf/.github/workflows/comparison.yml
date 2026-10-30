@@ -1,0 +1,205 @@
+# Rebuilds the engine comparison site (comparison/) and publishes it to gh-pages on every push to main.
+#
+# The Word fonts are not in this public repo; they come from the private sverrejb/docxide-pdf-assets repo,
+# checked out with a deploy key:
+#   assets/fonts/                           -> fonts/                   (engine_compare.py passes it as DOCXIDE_FONTS)
+#   assets/fixtures/scraped/                -> tests/fixtures/scraped/   (optional real-world corpus; only tracked
+#                                                                         cases are compared when absent)
+# Deploy key setup (public half on the assets repo, private half as a secret here):
+#   ssh-keygen -t ed25519 -N "" -f assets_key -C docxide-pdf-ci
+#   gh repo deploy-key add assets_key.pub -R sverrejb/docxide-pdf-assets -t docxide-pdf-ci
+#   gh secret set ASSETS_DEPLOY_KEY -R sverrejb/docxide-pdf < assets_key && rm assets_key assets_key.pub
+#
+# Shards: each fixture goes to one of SHARDS parallel jobs by a hash of its name (engine_compare.py
+# --shard i/n), so adding a fixture moves no other one; each job keeps its own comparison/ cache and
+# `publish` joins their site images and manifests and deploys. A cold run took ~110 min on one runner
+# (scoring is 3/4 of it: veraPDF + pdfinfo + SSIM per competitor PDF), which is over the job limit once
+# anything cold-starts the cache.
+#
+# Caching: Rust deps (rust-cache, one key shared by the shards), competitor binaries (keyed by the version
+# resolved at run time, so a new release is built once and then reused), and comparison/ (PDFs,
+# screenshots, scores and the WebP site, so only new or changed pages are encoded). Each shard saves its cache
+# under a new key every run and then deletes its other caches: the repository's 10 GB cache limit
+# evicts the least recently used entries, and with two generations of every shard around that used to be
+# the competitor binaries (14 min to rebuild) or a whole shard (45 min cold instead of 15).
+# engine_compare.py skips work whose output is newer than its input, so tools/restore_mtime.py gives
+# checked-out files their commit times and only changed fixtures are reconverted. (Not the
+# git-restore-mtime package: it is built on `git whatchanged`, which the runner's Git refuses, and
+# then dates nothing, so every run was cold.) Our binary is rebuilt every run and always reconverted.
+# Competitor and tool versions are deliberately NOT in the cache key: engine_compare.py stamps each
+# competitor PDF with the engine version that made it and reconverts on a change, and fingerprints
+# veraPDF/pdfinfo/mutool for the analyses and screenshots, so a new release redoes that engine's or
+# tool's work only. (With the versions in the key, every competitor release started a 2-hour cold run.)
+# A font change is in the key: no engine's cache knows which fonts it converted with.
+name: Engine comparison
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write   # force-push gh-pages
+  actions: write    # delete superseded caches; shard durations for the run summary
+concurrency:
+  group: engine-comparison   # deploy is a force-push; a queued run starts warm from the cache the running one saves
+env:
+  SHARDS: 8   # keep in step with the matrix below; a change re-shards everything, so the next run is cold
+jobs:
+  compare:
+    # 26.04's archive has mupdf 1.27 and LibreOffice 26.2; 24.04's mupdf 1.23 lacks the stext `text=`
+    # attribute the text-boundary metric parses.
+    runs-on: ubuntu-26.04
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false   # one shard's failure must not cancel the others' progress (their caches are saved either way)
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    env:
+      VERAPDF: "1.30.2"
+      PYTHONUNBUFFERED: "1"   # engine_compare.py's per-case lines get real timestamps in the log
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0   # restore-mtime needs history
+      - uses: actions/checkout@v7
+        with:
+          repository: sverrejb/docxide-pdf-assets
+          ssh-key: ${{ secrets.ASSETS_DEPLOY_KEY }}
+          path: assets
+          fetch-depth: 0
+      - name: Install LibreOffice, mutool, cwebp, pdfinfo, Java
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y -q --no-install-recommends mupdf-tools webp libreoffice-writer \
+            poppler-utils default-jre-headless
+      - name: Install veraPDF   # not in Ubuntu's archive; the official installer of the release Homebrew ships
+        run: |
+          curl -sSfL "https://software.verapdf.org/rel/${VERAPDF%.*}/verapdf-greenfield-${VERAPDF}-installer.zip" -o "$RUNNER_TEMP/verapdf.zip"
+          unzip -q "$RUNNER_TEMP/verapdf.zip" -d "$RUNNER_TEMP"
+          java -DINSTALL_PATH="$HOME/verapdf" -jar "$RUNNER_TEMP/verapdf-greenfield-${VERAPDF}/verapdf-izpack-installer-${VERAPDF}.jar" -options-system
+          echo "$HOME/verapdf" >> "$GITHUB_PATH"
+      - name: Install dxpdf   # its release .deb, latest; `cargo install` would build Skia. Fonts come via fontconfig (below)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download -R nerdy-pro/dxpdf -p '*_amd64.deb' -D "$RUNNER_TEMP/dxpdf"
+          sudo apt-get install -y -q --no-install-recommends "$RUNNER_TEMP"/dxpdf/*.deb
+      - name: Link private assets
+        run: |
+          ln -s "$PWD/assets/fonts" fonts
+          for g in scraped; do [ ! -d "assets/fixtures/$g" ] || ln -s "$PWD/assets/fixtures/$g" "tests/fixtures/$g"; done
+          mkdir -p ~/.local/share && ln -s "$PWD/assets/fonts" ~/.local/share/fonts && fc-cache -f   # LibreOffice and dxpdf see them via fontconfig
+          python3 tools/restore_mtime.py . && python3 tools/restore_mtime.py assets
+      - name: Word fonts where jubarte looks for them
+        # jubarte reads no Linux font directory and no fontconfig. It resolves its catalogue faces (Calibri,
+        # Arial, Times New Roman, Cambria, Aptos, Verdana, Georgia, Symbol, …) from Word-for-Mac's folders
+        # by fixed file names, and cloud families from Word's per-family cache folders; anything else comes
+        # from JUBARTE_FONT_DIR, which engine_compare.py sets. Without the two links below it would draw
+        # every Calibri/Arial/Times document in its bundled Carlito/Liberation while the other engines get
+        # the real fonts. Our vendored files carry the names it expects (Calibri.ttf, Times New Roman.ttf, Cambria.ttc…).
+        # Times New Roman in fonts/ is Apple's 5.01 build (hhea lineGap 87), the face Word for Mac drew the
+        # references with. Word's bundled 7.00 build has lineGap 0; with only that one here, every Times document's
+        # lines sat too tight and those cases collapsed on this site for every engine (found 2026-10-03).
+        run: |
+          sudo mkdir -p /Library/Fonts && sudo ln -s "$PWD/assets/fonts" /Library/Fonts/Microsoft
+          mkdir -p ~/"Library/Group Containers/UBF8T346G9.Office/FontCache/4"
+          ln -s "$PWD/assets/fonts/CloudFonts" ~/"Library/Group Containers/UBF8T346G9.Office/FontCache/4/CloudFonts"
+      - name: Font families the runner's own packages share with the Word fonts
+        # Our discovery ranks DOCXIDE_FONTS (fonts/) above /usr/share/fonts, so a distro package shipping one
+        # of these family names cannot shadow the Word font for our engine. Anything listed below is a family
+        # both provide; the other engines resolve it through fontconfig and may draw the distro's file.
+        run: |
+          fc-list --format '%{file}|%{family[0]}\n' | awk -F'|' '
+            /^\/usr\/share\/fonts/ {sys[tolower($2)]=$1}
+            /\.local\/share\/fonts/ {ours[tolower($2)]=1}
+            END {n=0; for (f in ours) if (f in sys) {print "  SHARED: " f " also in " sys[f]; n++}; print n " shared family names"}'
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: Swatinem/rust-cache@v2
+        with:
+          save-if: ${{ matrix.shard == 0 }}   # one key for all shards; the others' saves only failed to reserve it
+          workspaces: |
+            . -> target
+            tools -> target
+      - uses: taiki-e/cache-cargo-install-action@v3
+        with:
+          tool: minipdf-cli   # installs `minipdf`
+      - uses: taiki-e/cache-cargo-install-action@v3
+        with:
+          tool: rdocx-cli     # installs `rdocx`
+      - uses: taiki-e/cache-cargo-install-action@v3
+        with:
+          tool: office2pdf-cli   # installs `office2pdf`
+      - uses: taiki-e/cache-cargo-install-action@v3
+        with:
+          tool: jubarte-redlines   # installs `jubarte`; engine_compare.py hands it the fonts via JUBARTE_FONT_DIR
+      - uses: actions/cache/restore@v6
+        id: restore
+        with:
+          path: comparison
+          key: comparison-${{ matrix.shard }}of${{ env.SHARDS }}-fonts${{ hashFiles('assets/fonts/**') }}-${{ github.run_id }}
+          restore-keys: comparison-${{ matrix.shard }}of${{ env.SHARDS }}-fonts${{ hashFiles('assets/fonts/**') }}-
+      - run: python3 tools/engine_compare.py --shard "${{ matrix.shard }}/$SHARDS"
+      - uses: actions/cache/save@v6
+        id: save
+        if: always()   # keep the progress of a failed run
+        with:
+          path: comparison
+          key: comparison-${{ matrix.shard }}of${{ env.SHARDS }}-fonts${{ hashFiles('assets/fonts/**') }}-${{ github.run_id }}
+      - name: Drop the caches this run superseded
+        # Every other cache of this shard, not just the one restored from: a font change (new key) or a
+        # change of the cached path (new cache version, which no restore can see) leaves ones behind too.
+        if: always() && steps.save.outcome == 'success'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PREFIX: comparison-${{ matrix.shard }}of${{ env.SHARDS }}-
+          NEW: comparison-${{ matrix.shard }}of${{ env.SHARDS }}-fonts${{ hashFiles('assets/fonts/**') }}-${{ github.run_id }}
+        run: |
+          keys=$(gh cache list --key "$PREFIX" --limit 100 --json key --jq '.[].key' | sort -u)
+          # Only once the new key is really there: a save that failed to upload is just a warning.
+          echo "$keys" | grep -qx "$NEW" || { echo "new cache not saved, keeping the old ones"; exit 0; }
+          echo "$keys" | grep -vx "$NEW" | while read -r k; do
+            [ -z "$k" ] || gh cache delete "$k" || echo "could not delete $k"
+          done
+      - name: Hand the shard's site and manifest to publish
+        run: cp comparison/work/manifest.json "comparison/manifest.${{ matrix.shard }}.json"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: site-${{ matrix.shard }}
+          path: |
+            comparison
+            !comparison/work/**
+          compression-level: 0   # lossless WebP does not shrink further
+          retention-days: 1
+          if-no-files-found: error
+  publish:
+    needs: compare
+    runs-on: ubuntu-26.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+      - run: sudo apt-get install -y -q --no-install-recommends webp   # engine_compare.py insists on cwebp for a webp site
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: site-*
+          path: comparison
+          merge-multiple: true   # the shards' case directories are disjoint
+      - name: Join the shards
+        run: |
+          python3 tools/engine_compare.py --merge comparison/manifest.*.json
+          rm comparison/manifest.*.json
+      - name: Run summary
+        # The previous run's report.json comes from the published site; the new one is published with it.
+        continue-on-error: true   # a report bug must not block the deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          curl -sfL "https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/gh-pages/report.json" -o "$RUNNER_TEMP/prev.json" || true
+          python3 tools/ci_report.py "$RUNNER_TEMP/prev.json" comparison/work/manifest.json comparison/report.json >> "$GITHUB_STEP_SUMMARY"
+          {
+            echo; echo "| Shard | Minutes (limit 120) |"; echo "|---|---|"
+            gh api "repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/attempts/${GITHUB_RUN_ATTEMPT}/jobs" \
+              --jq '.jobs[] | select(.name | startswith("compare")) | "| \(.name) | \(((.completed_at | fromdate) - (.started_at | fromdate)) / 60 | floor) |"'
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Publish to gh-pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: tools/deploy_comparison.sh "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
