@@ -1,7 +1,7 @@
 # xgos — состояние Autopilot
 
 Активный прогон: .autopilot/2026-10-30-xgos-library--wip/.
-Режим manual, глубина deep. Сейчас Брифинг; dashboard/state ведёт ap.py.
+Режим manual, глубина deep. Сейчас Спецификация подготовлена; G2 PASS, ожидается согласование пользователя. Dashboard/state ведёт ap.py.
 
 ## Договорились
 
@@ -14,15 +14,15 @@
 ## Не доделано
 
 - Ответы получены: module github.com/mesocyclon/xdos, найти публичный корпус/эталоны, списки в колонтитулах/простых сносках поддержать.
-- Локальный commit 470434e и origin готовы. Push не выполнен: HTTPS credentials отсутствуют, существующий SSH key не принят. Требуется настройка доступа владельцем; секреты не запрашиваются.
-- Спецификация/interfaces, независимое покрытие G2 и согласование пользователя.
+- GitHub инициализирован: пользователь отправил коммиты, ls-remote подтвердил origin/main = local main = eb9787993f9367004d691f0c7ed387e50fb95492. Исходная проблема авторизации больше не препятствует опубликованной базе; новые рабочие документы после этого commit ещё готовятся.
+- spec.md/interfaces.md готовы; независимый G2 PASS (0 missing/partial/extra). Следующий обязательный шаг — согласование спецификации пользователем.
 - План тасков/G3 и согласование пользователя.
 - Вся реализация и приёмка впереди.
 
 ## Известные пробелы
 
-- architecture.md задаёт numbering main-story; пользователь подтвердил дополнительные stories, спецификация определяет правила и fixtures.
-- Корпус, fonts/XSD pins, шрифтовая квалификация, независимые визуальные эталоны ещё не получены; H0 не являются результатами измерений.
+- architecture.md baseline задаёт numbering main-story; spec §6.1 предлагает body/header-footer/footnotes logical scopes и квалификацию порядка по независимым эталонам. Поддержка дополнительных stories подтверждена пользователем; это не отказ от неё.
+- Research seed: 16 DOCX + 11 PDF (10 Word-provenance pairs и один FOP comparator), manifest/hash/license evidence и self-check сохранены. Полностью qualified exact geometry = 0; RU/story-numbering/fonts/visual gaps остаются Stage 0 obligations. H0 не являются результатами измерений.
 
 ## Правки без автопилота
 

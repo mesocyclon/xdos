@@ -1,0 +1,104 @@
+docx4j
+Copyright 2007-2025 Plutext Pty Ltd
+
+Unless otherwise mentioned, the sources below are used in docx4j-core.
+   
+Portions of the package org.docx4j.openpackaging are
+derivative works of OpenXML4J. OpenXml4J is copyright
+Wygwam, and available under two licenses, BSD and 
+Apache License, Version 2.0 (ASLv2).
+http://openxml4j.svn.sourceforge.net
+ 	
+org.jvnet.jaxb2_commons.ppp is copyright 2007 Gregory A. Kick
+It is licensed under ASLv2.
+    
+The package package org.docx4j.fonts.fop includes software 
+developed by the Apache Software Foundation (http://www.apache.org/),
+namely Apache FOP. Apache FOP  consists of voluntary contributions 
+made by many individuals on behalf of The Apache Software Foundation 
+and was originally created by James Tauber <jtauber@jtauber.com>.  
+ 
+org.docx4j.fonts.foray.font.format.Panose is copyright 
+2006 The FOray Project, http://www.foray.org
+It is licensed under the Apache License, Version 2.0
+(ASLv2).
+
+src/main/antlr is based on the XPath 1.0 
+(http://www.w3.org/TR/1999/REC-xpath-19991116) grammar 
+by Jan-Willem van den Broek, version 1.0, downloaded 
+on 2011-06-18 from 
+http://blog.jwbroek.com/2010/07/antlr-grammar-for-parsing-xpath-10.html
+That page said "Do with this code as you will." 
+ 	
+Regarding org.docx4j.model.listnumbering:
+- some of the package is a translation into 
+Java of a portion of Program.cs from Microsoft's OpenXmlViewer, which 
+is (c) Microsoft Corporation and was made available to the project under the 
+Microsoft Public License (Ms-PL).  See further the license header on
+the relevant files.		
+- NumberFormatRomanAbstract, NumberFormatRomanLower and NumberFormatRomanUpper
+are derived from code written by Fred Swartz and placed in public domain under the MIT license
+
+org.docx4j.com.google.common repackages portions of Guava,
+copyright the Guava Authors and Licensed under the Apache License, 
+Version 2.0
+
+org.docx4j.org.apache.camel.support.builder.xml.StAX2SAXSource repackages 
+https://github.com/apache/camel/blob/main/core/camel-xml-jaxp/src/main/java/org/apache/camel/support/builder/xml/StAX2SAXSource.java
+at commit https://github.com/apache/camel/commit/4ea9e6c357371682b855d2d79655b41120331b7a
+in docx4j 11.4.0 onward. The ASF licenses this file under the Apache License, Version 2.0
+
+org.docx4j.org.apache.poi repackages portions of Apache POI,
+which the ASF licenses under the Apache License, Version 2.0
+
+In particular, org.docx4j.org.apache.poi.hwmf and org.docx4j.org.apache.poi.hemf
+(Windows Metafile / Enhanced Metafile / EMF+ parsing and rendering), together with
+the org.docx4j.org.apache.poi.sl.draw, .sl.usermodel and .common.usermodel.fonts
+support classes they need, repackage portions of Apache POI 5.5.1
+(poi-scratchpad and poi), which the ASF licenses under the Apache License, Version 2.0
+
+org.docx4j.org.apache.xerces.util.EncodingMap.java repackages a file 
+from xercesImpl 2.11.0.  The ASF licenses this file under the Apache License, Version 2.0
+
+org.docx4j.org.apache.xml.security repackages code in org.apache.xml.security,
+which the ASF licenses under the Apache License, Version 2.0 
+
+docx4j-diffx uses the Diff-X library (org.pageseeder.diffx:pso-diffx) as a
+Maven dependency, copyright Allette Systems (Australia) and licensed under
+the Apache License, Version 2.0.  (docx4j 17.0.x and earlier instead bundled
+a fork of its com.topologi.diffx ancestor, copyright Topologi 2004, licensed
+under the Artistic License.)
+
+org.eclipse.compare, bundled in docx4j-diffx, repackages the LCS range
+differencer from the Eclipse Compare project, copyright IBM Corporation
+2000, 2007, and licensed under the Eclipse Public License v1.0
+(https://www.eclipse.org/legal/epl-v10.html).
+ 	
+The xsd dir (not shipped in any docx4j jar) contains various xsd files from which the object models
+used by JAXB were generated using XJC.  These generally came from
+either OfficeOpenXML-XMLSchema.zip 
+http://www.ecma-international.org/publications/standards/Ecma-376.htm says
+"Copy these file(s), free of charge", or on of the Microsoft
+Open Specifications documents, which says you can "distribute in your implementation, 
+with or without modification, any schemas .. that are included in the documentation".
+See also the Microsoft Open Specifications Promise. 
+
+Copyright © 2026, Oracle and/or its affiliates: contributions to automate the generation of all OpenXML objects from the
+XSD files. These include new files in the docx4j-xjc-copy and docx4j-openxml-objects-combined directories, as well as
+modifications to the XSD files. See further https://github.com/plutext/docx4j/pull/676
+
+From version 11.5.8 of 5 Dec 2025, certain fonts are distributed in module docx4j-export-fo-fonts-symbol.
+
+These are as follows:
+- noto sans symbols and noto sans symbols 2, which are licensed by The Noto Project Authors under SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007; 
+see further https://github.com/plutext/docx4j/blob/VERSION_11_5_9/docx4j-export-fo-fonts-symbol/src/main/resources/fonts-symbol/Noto_Sans_Symbols/OFL.txt
+- certain DejaVu fonts; see the license at https://github.com/plutext/docx4j/blob/VERSION_11_5_9/docx4j-export-fo-fonts-symbol/src/main/resources/fonts-symbol/dejavu-fonts-ttf-2.37/LICENSE 
+
+From version 11.5.9 of Dec 2025, certain fonts are distributed in module docx4j-export-fo-fonts-croscore.  These are licensed to us under ASLv2; see the LICENSE.txt files in the module
+ 
+From version 11.5.9 of Dec 2025, certain fonts are distributed in module docx4j-export-fo-fonts-crosextra.  These are licensed to us under SIL OPEN FONT LICENSE Version 1.1; see the LICENSE.txt files in the module
+
+From version 11.5.9 of Dec 2025, certain fonts are distributed in module docx4j-export-fo-fonts-liberation.  
+For these: Digitized data copyright (c) 2010 Google Corporation with Reserved Font Arimo, Tinos and Cousine.  Copyright (c) 2012 Red Hat, Inc. with Reserved Font Name Liberation.
+These are licensed to us under SIL OPEN FONT LICENSE Version 1.1; see the LICENSE file in the module
+

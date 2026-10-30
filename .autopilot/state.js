@@ -13,7 +13,7 @@ window.STATE =
   "skillDir": "/home/vortex/.codex/skills/autopilot",
   "baseCommit": null,
   "startedAt": "2026-10-30T21:12:58+05:00",
-  "updatedAt": "2026-10-30T21:27:44+05:00",
+  "updatedAt": "2026-10-30T21:41:17+05:00",
   "finishedAt": null,
   "stages": [
     {
@@ -60,7 +60,7 @@ window.STATE =
     "total": 61,
     "done": 0,
     "inTicket": 0,
-    "inSpec": 0,
+    "inSpec": 61,
     "placeholder": 0,
     "deferred": 0,
     "dropped": 0
@@ -73,7 +73,12 @@ window.STATE =
     "emptyEnv": []
   },
   "additions": [],
-  "coverage": null,
+  "coverage": {
+    "found": 0,
+    "fixed": 0,
+    "deferred": 0,
+    "items": []
+  },
   "concerns": [
     "GitHub origin настроен; initial commit локально создан, HTTPS push не прошёл из-за отсутствующей авторизации VS Code credential socket. Секреты не запрашиваются; проверить существующий SSH доступ."
   ],
@@ -87,10 +92,17 @@ window.STATE =
     "2026-10-30T21:22:53+05:00",
     "2026-10-30T21:24:23+05:00",
     "2026-10-30T21:25:25+05:00",
-    "2026-10-30T21:27:44+05:00"
+    "2026-10-30T21:27:44+05:00",
+    "2026-10-30T21:32:59+05:00",
+    "2026-10-30T21:41:02+05:00",
+    "2026-10-30T21:41:17+05:00"
   ],
-  "rev": 10,
-  "waiting": null,
+  "rev": 14,
+  "waiting": {
+    "kind": "spec",
+    "since": "2026-10-30T21:41:17+05:00",
+    "note": "Спецификация полного xdos v1 и interfaces готовы; G2 PASS, 61 требование. Ожидается explicit согласование пользователя перед планом."
+  },
   "waits": [
     {
       "kind": "briefing",
@@ -145,313 +157,334 @@ window.STATE =
       "k": "add",
       "key": "concerns",
       "n": 1
+    },
+    {
+      "t": "2026-10-30T21:32:59+05:00",
+      "k": "add",
+      "key": "report",
+      "n": 1
+    },
+    {
+      "t": "2026-10-30T21:41:02+05:00",
+      "k": "gate",
+      "g": "G2",
+      "ok": true,
+      "found": 0,
+      "fixed": 0,
+      "deferred": 0
+    },
+    {
+      "t": "2026-10-30T21:41:17+05:00",
+      "k": "ask",
+      "kind": "spec",
+      "note": "Спецификация полного xdos v1 и interfaces готовы; G2 PASS, 61 требование. Ожидается explicit согласование пользователя перед планом."
     }
   ],
   "reqList": [
     {
       "id": "R01",
       "text": "«manual deep»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R02",
       "text": "«Да, готовим реализацию библиотеки по архитектуре»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R03",
       "text": "«для генерации Word-документов (.docx) с нуля»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R04",
       "text": "«редактирования любых их частей»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R05",
       "text": "«вставки одного документа в другой»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R06",
       "text": "«экспорта в PDF без внешних программ»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R07",
       "text": "«без LibreOffice, headless-браузеров, cgo и т.п.»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R08",
       "text": "«неизвестные элементы и атрибуты хранятся как есть»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R09",
       "text": "«записываются обратно без потерь»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R10",
       "text": "«Слои и пакеты: OPC/ZIP»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R11",
       "text": "«граф зависимостей (строго однонаправленный)»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R12",
       "text": "«доменный API»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R13",
       "text": "«отдельный resolver»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R14",
       "text": "«кэш вычисленных значений»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R15",
       "text": "«адресация узлов (стабильные ID/пути)»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R16",
       "text": "«запросы и обход»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R17",
       "text": "«транзакционные команды с undo/redo»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R18",
       "text": "«валидация схемы OOXML»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R19",
       "text": "«слияние styles, numbering, media»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R20",
       "text": "«relationships и ID с разрешением конфликтов»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R21",
       "text": "«сохранение разделов, колонтитулов, закладок и ссылок»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R22",
       "text": "«шрифты и метрики, subsetting»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R23",
       "text": "«переносы, разбиение на страницы»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R24",
       "text": "«таблицы, колонтитулы, сноски, изображения»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R25",
       "text": "«чтобы можно было подменить любую часть»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R26",
       "text": "«какие возможности входят в v1, а какие нет»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R27",
       "text": "«горутины и errgroup»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R28",
       "text": "«потоковая запись»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R29",
       "text": "«sync.Pool»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R30",
       "text": "«ленивая загрузка медиа»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R31",
       "text": "«контексты и отмена»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R32",
       "text": "«неизменяемые снимки для безопасного чтения»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R33",
       "text": "«минимум аллокаций»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R34",
       "text": "«кастомные элементы, фильтры, шрифтовые провайдеры»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R35",
       "text": "«опции конфигурации»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R36",
       "text": "«чёткая модель ошибок»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R37",
       "text": "«roundtrip docx→docx»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R38",
       "text": "«golden-файлы»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R39",
       "text": "«корпус реальных документов»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R40",
       "text": "«fuzzing парсера»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R41",
       "text": "«бенчмарки»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R42",
       "text": "«Расход памяти и вычислений должен быть обоснован»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R43",
       "text": "«единая модель данных»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R44",
       "text": "«исправление общей причины без дублирования и частных обходов»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R45",
       "text": "«Изменения внутри подсистемы должны затрагивать минимум несвязанного кода»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R46",
       "text": "«Структура каталогов и Go-пакетов должна отражать ответственности подсистем»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R47",
       "text": "«Добавить слой простого API»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R48",
       "text": "«очевидно что это не только 3 функции»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R49",
       "text": "«Close только у источников»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R50",
       "text": "«приблизительный autofit с предупреждением вместо отказа»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R51",
       "text": "«Бандлить дефолтные шрифты»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R52",
       "text": "«Начать этапы со spike по subsetter и shaping»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R53",
       "text": "«Ввести количественную метрику на корпусе»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R54",
       "text": "«валидировать целиком на Save»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "R55",
       "text": "«при Commit — только быстрые инварианты»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "G01",
       "text": "«инициируй в репозитоории https://github.com/mesocyclon/xdos»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "G02",
       "text": "«найди качественные документы эталоны в интернете»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "G03",
       "text": "«поддерживаем»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "G04",
       "text": "«Расход памяти и вычислений должен быть обоснован объёмом обрабатываемых данных и выполняемой операцией.»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "G05",
       "text": "«Структура каталогов и Go-пакетов должна отражать ответственности подсистем. Разбиение должно обеспечивать понятную навигацию и направленные зависимости; объединение и разделение кода должны быть обоснованы его связностью»",
-      "status": "open"
+      "status": "in-spec"
     },
     {
       "id": "G06",
       "text": "«Понятные границы подсистем и зависимости, единая модель данных, исправление общей причины без дублирования и частных обходов. Изменения внутри подсистемы должны затрагивать минимум несвязанного кода.»",
-      "status": "open"
+      "status": "in-spec"
     }
   ],
   "gates": {
@@ -460,7 +493,17 @@ window.STATE =
       "at": "2026-10-30T21:25:25+05:00",
       "open": 58,
       "total": 58
+    },
+    "G2": {
+      "ok": true,
+      "at": "2026-10-30T21:41:02+05:00",
+      "found": 0,
+      "fixed": 0,
+      "deferred": 0
     }
   },
-  "result": null
+  "result": null,
+  "report": [
+    "GitHub origin/main подтверждён: eb9787993f9367004d691f0c7ed387e50fb95492 совпадает с local main; начальная публикация пользователем выполнена, прежняя запись о неудачном push относится к более ранней попытке."
+  ]
 }

@@ -1279,6 +1279,117 @@
         "corpus-seed/python-docx/LICENSE"
       ],
       "redistribution": "Repository license plus narrow synthetic test content; no claim about arbitrary third-party fixtures"
+    },
+    {
+      "repo": "plutext/docx4j",
+      "commit": "4cc16a7c70f4ee7499260ae8bdeed0f7ac7e133b",
+      "upstream_path": "docs/Docx4j_GettingStarted.docx",
+      "raw_url": "https://raw.githubusercontent.com/plutext/docx4j/4cc16a7c70f4ee7499260ae8bdeed0f7ac7e133b/docs/Docx4j_GettingStarted.docx",
+      "local_path": "corpus-seed/docx4j/docs/Docx4j_GettingStarted.docx",
+      "bytes": 194086,
+      "sha256": "86be2c03860ef1dca9251f97dfede1b8e96769a4b168f66b7b5aec5f24001da5",
+      "origin": "Real authored project documentation, not synthetic fixture",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docx4j/legals/LICENSE",
+        "sources/docx4j/legals/NOTICE",
+        "Project-owned Getting Started documentation distributed in upstream docs; not a third-party submitted sample"
+      ],
+      "expectedrole": "roundtrip",
+      "word_oracle": "NOT Word: companion PDF Creator/Producer Apache FOP Version SVN",
+      "exact_geometry_qualified": false,
+      "flags": [
+        "Companion PDF is Apache FOP output, not Word oracle",
+        "Exact font binaries/version and input-output revision correspondence unverified",
+        "Real authored documentation coverage only; not representative business-document corpus acceptance"
+      ],
+      "features": {
+        "RU": false,
+        "EN": true,
+        "tables": 15,
+        "lists": 222,
+        "headers": 0,
+        "footers": 1,
+        "notes": 4,
+        "images": 1,
+        "sections": 3,
+        "fields": 291,
+        "charts": 0,
+        "alternate_content": 0
+      },
+      "fontnames": [
+        "Arial",
+        "Arimo",
+        "Calibri",
+        "Cambria",
+        "Consolas",
+        "Courier New",
+        "Cousine",
+        "Liberation Mono",
+        "Liberation Sans",
+        "Liberation Serif",
+        "Lucida Console",
+        "Malgun Gothic",
+        "Symbol",
+        "Tahoma",
+        "Times New Roman",
+        "Tinos",
+        "Trebuchet MS",
+        "Verdana",
+        "Wingdings"
+      ],
+      "XMLprofile": "Transitional",
+      "namespaces": [
+        "http://purl.org/dc/elements/1.1/",
+        "http://purl.org/dc/terms/",
+        "http://schemas.microsoft.com/office/drawing/2010/main",
+        "http://schemas.microsoft.com/office/word/2010/wordml",
+        "http://schemas.microsoft.com/office/word/2012/wordml",
+        "http://schemas.openxmlformats.org/drawingml/2006/main",
+        "http://schemas.openxmlformats.org/drawingml/2006/picture",
+        "http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing",
+        "http://schemas.openxmlformats.org/officeDocument/2006/bibliography",
+        "http://schemas.openxmlformats.org/officeDocument/2006/customXml",
+        "http://schemas.openxmlformats.org/officeDocument/2006/docPropsVTypes",
+        "http://schemas.openxmlformats.org/officeDocument/2006/extended-properties",
+        "http://schemas.openxmlformats.org/officeDocument/2006/math",
+        "http://schemas.openxmlformats.org/package/2006/content-types",
+        "http://schemas.openxmlformats.org/package/2006/metadata/core-properties",
+        "http://schemas.openxmlformats.org/package/2006/relationships",
+        "http://schemas.openxmlformats.org/wordprocessingml/2006/main",
+        "urn:schemas-microsoft-com:office:office"
+      ],
+      "parts": 32,
+      "expanded_bytes": 2593152
+    },
+    {
+      "repo": "plutext/docx4j",
+      "commit": "4cc16a7c70f4ee7499260ae8bdeed0f7ac7e133b",
+      "upstream_path": "docs/Docx4j_GettingStarted.pdf",
+      "raw_url": "https://raw.githubusercontent.com/plutext/docx4j/4cc16a7c70f4ee7499260ae8bdeed0f7ac7e133b/docs/Docx4j_GettingStarted.pdf",
+      "local_path": "corpus-seed/docx4j/docs/Docx4j_GettingStarted.pdf",
+      "bytes": 546019,
+      "sha256": "fcd994b3e38848043f28b1a5947408afd39fb0b98ead60ead16ed12bed9ba845",
+      "origin": "Real authored project documentation, not synthetic fixture",
+      "license": "Apache-2.0",
+      "licenseevidence": [
+        "sources/docx4j/legals/LICENSE",
+        "sources/docx4j/legals/NOTICE",
+        "Project-owned Getting Started documentation distributed in upstream docs; not a third-party submitted sample"
+      ],
+      "expectedrole": "candidate-unqualified",
+      "word_oracle": "NOT Word: companion PDF Creator/Producer Apache FOP Version SVN",
+      "exact_geometry_qualified": false,
+      "flags": [
+        "Companion PDF is Apache FOP output, not Word oracle",
+        "Exact font binaries/version and input-output revision correspondence unverified",
+        "Real authored documentation coverage only; not representative business-document corpus acceptance"
+      ],
+      "pdf_raw_metadata": [
+        "/Creator (Apache FOP Version SVN)",
+        "/Producer (Apache FOP Version SVN)",
+        "/CreationDate (D:20261022142747+11'00')"
+      ]
     }
   ]
 }

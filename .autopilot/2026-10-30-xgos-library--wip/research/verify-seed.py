@@ -8,7 +8,7 @@ import xml.etree.ElementTree as ET
 base = Path(__file__).resolve().parent
 manifest = json.loads((base / "manifest.json").read_text())
 entries = manifest["entries"]
-assert len(entries) == 25
+assert len(entries) == 27
 assert sum(entry["bytes"] for entry in entries) <= 15_000_000
 for entry in entries:
     path = base / entry["local_path"]
@@ -33,4 +33,4 @@ for entry in entries:
                 assert b"<!DOCTYPE" not in payload.upper()
                 assert b"<!ENTITY" not in payload.upper()
                 ET.fromstring(payload)
-print("PASS: 15 DOCX + 10 PDF; hashes, sizes, ZIP limits, XML parsing")
+print("PASS: 16 DOCX + 11 PDF; hashes, sizes, ZIP limits, XML parsing")
